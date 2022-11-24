@@ -52,7 +52,7 @@ const App = () => {
   const notify = (message, hasError = false) => {
     if (hasError) {
       toast.error(message, {
-        position: "top-center",
+        position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -63,7 +63,7 @@ const App = () => {
     }
     else {
       toast(message, {
-        position: "top-center",
+        position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -122,7 +122,7 @@ const App = () => {
             Generate Password
           </button>
           <ToastContainer
-            position="top-center"
+            position="top-right"
             autoClose={5000}
             hideProgressBar={false}
             newestOnTop={false}
